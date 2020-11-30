@@ -9,7 +9,7 @@ ssc install regsave, replace
 	list
 	
 	save basicmodel.dta, replace  
-	export excel using "basicmodel.xlsx", firstrow(varlabels) keepcellfmt replace 
+	export excel using "basicmodel.xlsx", firstrow(varlabels) replace 
  
 *-- With multiple models & specifiying output
 	* Model 1 
@@ -54,4 +54,4 @@ ssc install regsave, replace
 	order model 
 
 	save mymodels.dta, replace  
-	export excel using "mymodels.xlsx", firstrow(varlabels) keepcellfmt replace 
+	export excel using "mymodels.xlsx", firstrow(varlabels) replace 
